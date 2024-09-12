@@ -47,7 +47,7 @@ body {
 /* Individual calculator containers */
 .container {
     float: left;
-    width: 47%; /* Adjust size to make them sit side by side */
+    width: 40%; /* Adjust size to make them sit side by side */
     background-color: white;
     padding: 20px;
     border-radius: 10px;
