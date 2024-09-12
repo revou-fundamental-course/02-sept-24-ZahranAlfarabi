@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Matematik Segitiga</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="title">
+        <h1>Kalkulator Matematik Segitiga</h1>
+    </div>
+    <div class="pembuka">
+        <p>Halo! nama saya Mohammad Zahran Alfarabi dan ini adalah website untuk menghitung nilai luas dan keliling dari segitiga, sebagai tugas dari kelas Fundamental Course Software Engineering dari RevoU.
+            Pada website ini anda bisa menghitung nilai dari luas dan keliling segitiga, silahkan mencoba!</p>
+    </div>
+    <div class="calculator">
+
+        <div class="container">
+
+            <!-- Form for Area Calculation -->
+            <h2>Hitung Luas Segitiga</h2>
+            <p>Luas Segitiga dihitung dengan rumus 1/2 x a x t</p>
+            <img src="Luas Segitiga.jpg">
+            <form id="area-form">
+                <label for="base">Alas (Base): </label>
+                <input type="number" id="base" name="base" min="0" step="any" required>
+
+                <label for="height">Tinggi (Height): </label>
+                <input type="number" id="height" name="height" min="0" step="any" required>
+
+                <button type="button" id="calculate-area">Hitung Luas</button>
+            </form>
+
+            <!-- Results -->
+            <div class="result">
+                <p id="area-result">Luas Segitiga: </p>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <!-- Form for Perimeter Calculation -->
+            <h2>Hitung Keliling Segitiga</h2>
+            <p>Keliling Segitiga dihitung dengan rumus s + s + s, yaitu penjumlahan dari panjang semua sisinya, masukkan nilai dari tiap sisi di bawah:</p>
+            <img src="Keliling_Segitiga.png" alt="Ilustrasi Keliling Segitiga" style="width: 57%;">
+            <form id="perimeter-form">
+                <label for="sideA">Sisi A (Side A): </label>
+                <input type="number" id="sideA" name="sideA" min="0" step="any" required>
+
+                <label for="sideB">Sisi B (Side B): </label>
+                <input type="number" id="sideB" name="sideB" min="0" step="any" required>
+
+                <label for="sideC">Sisi C (Side C): </label>
+                <input type="number" id="sideC" name="sideC" min="0" step="any" required>
+
+                <button type="button" id="calculate-perimeter">Hitung Keliling</button>
+            </form>
+
+            <!-- Results -->
+            <div class="result">
+                <p id="perimeter-result">Keliling Segitiga: </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
